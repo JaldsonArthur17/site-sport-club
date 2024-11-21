@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #020204;
+    color: #ffffff;
+}
+
+header {
+    background-color: #800000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #ffffff; 
+    background-image: url('https://e0.pxfuel.com/wallpapers/380/814/desktop-wallpaper-sport-recife-veja-mais-e-baixe-de-graca-em-nosso-blog-78i3ug-futebol-internacional-futebol-brasileiro-futebol.jpg');
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    color: white;
+    overflow: hidden; 
+    filter: brightness(0.8);
+}
+
+section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.4); /* Overlay vermelho com 40% de opacidade */
+    z-index: 1; /* Garante que o overlay fique sobre a imagem, mas abaixo do conteúdo */
+    border-radius: 8px; /* Mantém os cantos arredondados */
+}
+
+section > * {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo (texto, etc.) fique acima do overlay */
+}
+
+section2 {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#jogos-lista, #noticias-lista, #forum-posts {
+    margin-top: 20px;
+}
+
+#destaque .noticia-destaque {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#destaque .noticia-destaque img {
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+#destaque .texto-destaque h2 {
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+#destaque .texto-destaque p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+#destaque .leia-mais {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#noticias-lista .noticia {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #800000;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#noticias-lista .noticia img {
+    width: 30%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+#noticias-lista .conteudo-noticia h3 {
+    font-size: 1.4em;
+    color: #ffffff;
+}
+
+#noticias-lista .conteudo-noticia p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+#noticias-lista .conteudo-noticia a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#forum-posts .forum-post {
+    background-color: #800000;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#forum-posts .forum-post h3 {
+    font-size: 1.3em;
+    color: #ffffff;
+    text-align: center;
+}
+
+#forum-posts .forum-post p {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+#forum-posts .forum-post a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
